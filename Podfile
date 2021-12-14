@@ -16,4 +16,5 @@ target 'SwiftApp' do
     # Pods for testing
   end
 
+pod 'DropDown'
 end
