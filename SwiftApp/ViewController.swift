@@ -13,14 +13,35 @@ class ViewController: UIViewController {
     @IBOutlet weak var tap: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        
-    }
 
-    @IBAction func click(_ sender: Any) {
-        
+        // Do any additional setup after loading the view.
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        if Core.shared.isNewUser(){
+            //show on boarding screen
+            let vc = storyboard?.instantiateViewController(withIdentifier: "welcome") as! WelcomeViewController
+            vc.modalPresentationStyle = .fullScreen
+            present(vc,animated:true)
+        }
+    }
+    
+    
+
+}
+
+class Core{
+    static let shared = Core()
+    
+    func isNewUser() -> Bool
+    {
+        return !UserDefaults.standard.bool(forKey: "isNewUser")
+    }
+    
+    func setIsNotNewUser()
+    {
+        UserDefaults.standard.set(true, forKey: "isNewUser")
+    }
 }
 
