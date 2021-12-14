@@ -19,12 +19,7 @@ class ViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        if Core.shared.isNewUser(){
-            //show on boarding screen
-            let vc = storyboard?.instantiateViewController(withIdentifier: "welcome") as! WelcomeViewController
-            vc.modalPresentationStyle = .fullScreen
-            present(vc,animated:true)
-        }
+
     }
     
     

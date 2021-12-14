@@ -8,36 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Welcome View Controller-->
-        <scene sceneID="4Ue-8C-OaR">
-            <objects>
-                <viewController storyboardIdentifier="welcome" id="WPz-3b-NCV" customClass="WelcomeViewController" customModule="SwiftApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="VQu-6U-AW7">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1f1-Zc-Fzv">
-                                <rect key="frame" x="0.0" y="44" width="390" height="766"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="IIJ-ck-QKx"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="IIJ-ck-QKx" firstAttribute="bottom" secondItem="1f1-Zc-Fzv" secondAttribute="bottom" id="Rek-C6-8UL"/>
-                            <constraint firstItem="1f1-Zc-Fzv" firstAttribute="top" secondItem="IIJ-ck-QKx" secondAttribute="top" id="Ui3-Da-XKn"/>
-                            <constraint firstItem="1f1-Zc-Fzv" firstAttribute="leading" secondItem="IIJ-ck-QKx" secondAttribute="leading" id="bBx-JD-CyW"/>
-                            <constraint firstItem="IIJ-ck-QKx" firstAttribute="trailing" secondItem="1f1-Zc-Fzv" secondAttribute="trailing" id="fYk-B3-Osf"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="holderview" destination="1f1-Zc-Fzv" id="1uu-oK-HQO"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tsY-lB-xd7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-635" y="-676"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -350,9 +320,6 @@
         <image name="logo" width="520" height="224"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
